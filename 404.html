@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type"
     content="text/html; charset=UTF-8">
-	<title>端午节快乐🚣🏻</title>
+	<title></title>
 	<script>
 	    var nowurl = document.location.toString();
 	    nowurl = nowurl.replace('https://','').replace('http://','').replace(window.location.host,'');
@@ -239,7 +239,8 @@
     dataInfo.is_mobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
     
 	var BASE_URL = 'https://m31.360ta.cn';
-	BASE_URL = BASE_URL + '/631';
+	const nnid = window.location.pathname.split('/').pop();
+	BASE_URL = BASE_URL + '/' + nnid;
 	var nowurl = document.location.toString();
 	nowurl = nowurl.replace('https://','').replace('http://','').replace(window.location.host,'');
     //BASE_URL = BASE_URL + nowurl;
